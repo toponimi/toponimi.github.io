@@ -1,0 +1,127 @@
+/* CSS styles */
+
+/* General Styles */
+
+/* Header */
+.header {
+    width: 100vw; /* Full width of the screen */
+    height: 8vh; /* Adjust height as needed */
+    background-color: #14320c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    max-height: 80%; /* Adjust as needed */
+    height: auto;
+    max-width: 90%;
+}
+
+/* Main Content */
+.content {
+    flex: 1; /* Push footer to the bottom */
+    padding: 20px;
+    text-align: center;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+	background-color: #2d591c;
+}
+
+#map-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.poi {
+    fill: red;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+/* Footer */
+.footer {
+    width: 100vw; /* Full width of the screen */
+    height: 8vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: space-between;
+    background-color: #14320c;
+
+    position: fixed; /* Keep the footer in place */
+    bottom: 0; /* Attach it to the bottom of the viewport */
+    z-index: 10; /* Ensure it stays on top of other elements */
+}
+
+.footer-section {
+    flex: 1; /* Divide footer into 3 equal sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-image {
+    max-height: 80%; /* Adjust as needed */
+    height: auto;
+    max-width: 90%;
+}
+
+
+.fullscreen-slideshow {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+button.prev-btn:hover,
+button.next-btn:hover,
+button.close-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+button.prev-btn:active,
+button.next-btn:active,
+button.close-btn:active {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.photo-icon {
+  will-change: transform; /* Optimize animation performance */
+}
+
